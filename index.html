@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Festivals Calendar 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Global Festivals Calendar 2026</h1>
+    <p>Track key festivals around the world with dates, locations, and planning details.</p>
+  </header>
+
+  <main>
+    <section class="filters">
+      <label>
+        Search
+        <input id="searchInput" type="text" placeholder="Festival, country, religion, notes..." />
+      </label>
+
+      <label>
+        Month
+        <select id="monthSelect">
+          <option value="">All months</option>
+        </select>
+      </label>
+
+      <label>
+        Region
+        <select id="regionSelect">
+          <option value="">All regions</option>
+        </select>
+      </label>
+
+      <label>
+        Category
+        <select id="categorySelect">
+          <option value="">All categories</option>
+        </select>
+      </label>
+    </section>
+
+    <section>
+      <p id="stats" class="stats"></p>
+      <div id="festivalList" class="festival-list"></div>
+    </section>
+  </main>
+
+  <template id="festivalCardTemplate">
+    <article class="festival-card">
+      <h2 class="festival-name"></h2>
+      <p class="festival-date"></p>
+      <ul>
+        <li><strong>Location:</strong> <span class="festival-location"></span></li>
+        <li><strong>Category:</strong> <span class="festival-category"></span></li>
+        <li><strong>Region:</strong> <span class="festival-region"></span></li>
+        <li><strong>Summary:</strong> <span class="festival-description"></span></li>
+        <li><strong>Best for:</strong> <span class="festival-travel"></span></li>
+      </ul>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
